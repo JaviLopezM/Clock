@@ -119,17 +119,6 @@
             // Drawing code goes here
         }, 1000 / fps);
 
-        var time;
-        function draw() {
-            requestAnimationFrame(draw);
-            var now = new Date().getTime(),
-                    dt = now - (time || now);
-
-            time = now;
-
-            // Drawing code goes here... for example updating an 'x' position:
-            this.x += 10 * dt; // Increase 'x' by 10 units per millisecond
-        }
     }
 </script>
 </body>
