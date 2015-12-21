@@ -15,7 +15,8 @@
     ctx.translate(radius, radius);
     radius = radius * 0.90
     //drawClock();
-    setInterval(draw);
+    draw();
+    //setInterval(draw);
 
     function drawClock() {
         ctx.arc(0, 0, radius, 0 , 2*Math.PI);
@@ -110,8 +111,8 @@
             render();
         })();
     }
-    var fps = 15;
     function draw() {
+        var fps = 15;
         setTimeout(function() {
             requestAnimationFrame(draw);
             // Drawing code goes here
